@@ -1,0 +1,110 @@
+/******************** team *******************/
+.section-title {
+  @extend %title;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  @media screen and (min-width: $desktop) {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+.team {
+    background-color: $tem;
+
+    &_ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      /*display: flex;
+      list-style-type: none;
+      column-gap: 30px;*/
+
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+      }
+      @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+      }
+
+    }
+
+    &_li {
+      margin: auto;
+      box-shadow: 0px 1px 3px $colorteam, 0px 1px 1px $colorteam2, 0px 2px 1px $colorteam3;
+      border-radius: 0px 0px 4px 4px;
+      margin-bottom: 30px;
+
+      
+      @media screen and (min-width: $desktop) {
+        margin-bottom: 0px;
+      }
+    }
+}
+
+.figcaption {
+    width: 100%;
+    margin-top: -0.3rem;
+    padding: 30px 0px 30px 0px;
+    background-color: $colorwhite;
+    color: $texcolor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+
+    &_p {
+      padding-top: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.17;
+      text-align: center;
+      color: $colorp;
+    }
+    .figure_ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+}
+
+.item {
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social_networks {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: $networks;
+
+  &:hover {
+    background-color: $background;
+    color: $colorwhite;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+}
+
+/*SVG*/
+.icon-team {
+  fill: currentColor;
+}
+
+
+
+
+
+
